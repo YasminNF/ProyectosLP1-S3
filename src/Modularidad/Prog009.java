@@ -2,7 +2,7 @@
 package Modularidad;
 
 //@author NIOUX
-//Métodos que devuelven valores
+//Métodos que devuelven parámetros
 
 public class Prog009 {
     public static String miuniversidad(){
