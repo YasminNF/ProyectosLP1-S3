@@ -6,7 +6,9 @@ package Arreglos;
 import Utils.Leer;
 
 
-/*Desarrolle un programa que permita el ingreso de valores a un arreglo y muestre los valores ingresados indicando si el número es PAR/IMPAR y POSITIVO/NEGATIVO/NEUTRO
+/*Desarrolle un programa que permita el ingreso de valores a un arreglo 
+y muestre los valores ingresados indicando 
+si el número es PAR/IMPAR y POSITIVO/NEGATIVO/NEUTRO
 Dato de Entrada:
 Cantidad: 5
 numeros[0]: 10
