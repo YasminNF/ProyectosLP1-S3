@@ -3,29 +3,33 @@ package Arreglos;
 
 //@author NIOUX
 
-import Utils.Leer;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 // Diseñar un algoritmo que permita el ingreso de 7 
 // valores a una arreglo y mostrarlos
 
 public class Prog099 {
-    public static void inicio(){
-        int[] a = new int[7];
-        System.out.println("Tamaño del arreglo: " + a.length);
-        System.out.println("Ingresar los elementos: ");
-        for (int i = 0; i < a.length ; i++) {
-            System.out.print("a[ "+i+" ]: ");
-            a[i] = Leer.entero();
-            
-        }
-        System.out.println("Los elementos del arreglo son: ");
-        for (int i = 0; i <  a.length; i++) {
-            System.out.println("a[ "+i+" ]: " + a[i]);
-            
-        }
-        
-    }
+   public static ArrayList<Integer> listaEnteros = new ArrayList<>();
     public static void main(String[] args) {
-        inicio();
+         Scanner scan = new Scanner(System.in);
+       System.out.println("LLENE EL ARREGLO DE ENTEROS");
+       int ultimoV=-1;
+       while(ultimoV!=0){
+          System.out.println("DIGITE UN NÚMERO, 0 PARA SALIR DEL LLENADO : ");
+          ultimoV=scan.nextInt();
+          listaEnteros.add(ultimoV); 
+       }
+       System.out.println("DIGITE UN NUMERO A BUSCAR :");
+       ultimoV=scan.nextInt();
+       int cant=0;
+       for(int i=0;i<listaEnteros.size();i++){
+           if(ultimoV==listaEnteros.get(i)){
+               cant++;
+           }
+       }
+       
+       System.out.println("EL NÚMERO A BUSCAR FUE : "+ultimoV);
+       System.out.println("SE ENCONTRARON : "+cant+" VECES");
     }
 }
